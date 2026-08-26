@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programas · Puerto Nuevo</title>
+    <title>Programas · Una Oportunidad Más</title>
+    <meta name="description"
+        content="Conoce los programas de tratamiento de Una Oportunidad Más: desintoxicación médica, residencial, ambulatorio, terapia familiar y seguimiento post-alta.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap"
@@ -17,78 +19,102 @@
     <header>
         <nav class="nav-wrap">
             <a href="index.html" class="logo">
-                <img src="imagenes-uomasweb/logo-clinica.png" alt="Puerto Nuevo · Una Oportunidad Más">
+                <img src="imagenes-uomasweb/LOGOTIPO DE LA CLINICA PLUS.svg"
+                    alt="Casa cristiana de rehabilitación y desintoxicación · Una Oportunidad Más">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
-      <ul id="navMenu">
+            <ul id="navMenu">
                 <li><a href="index.html"><span class="nav-icon">🏠</span>Inicio</a></li>
                 <li><a href="sobre-nosotros.html"><span class="nav-icon">🌿</span>Sobre nosotros</a></li>
-                <li><a href="programas.html"><span class="nav-icon">🩺</span>Programas</a></li>
+                <li><a href="programas.html" class="active"><span class="nav-icon">🩺</span>Programas</a></li>
                 <li><a href="proceso.html"><span class="nav-icon">🧭</span>Proceso</a></li>
                 <li><a href="contacto.html"><span class="nav-icon">📞</span>Contacto</a></li>
             </ul>
-            <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="btn btn-header">Hablar con alguien</a>
+            <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="btn btn-header">Hablar con
+                alguien</a>
         </nav>
     </header>
 
+    <!-- Banner -->
+    <section class="page-banner">
+        <div class="wrap">
+            <svg class="page-banner-ornament" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 4 L22 40 M8 12 Q22 20 36 12" stroke="currentColor" stroke-width="1.3"
+                    stroke-linecap="round" />
+                <circle cx="22" cy="22" r="3" fill="currentColor" />
+            </svg>
+            <span class="eyebrow">Tratamientos</span>
+            <h1>Programas</h1>
+            <p class="hero-subtitle">Un tratamiento adaptado a cada etapa, desde la desintoxicación hasta el
+                acompañamiento después del alta.</p>
+        </div>
+    </section>
+
+    <!-- Programas -->
     <section id="programas">
         <div class="wrap">
-            <div class="section-head">
-                <div class="eyebrow">Programas</div>
-                <h2>Un tratamiento adaptado a cada etapa</h2>
-                <p>Desde la desintoxicación hasta el acompañamiento después del alta, cada programa está diseñado para
-                    sostener
-                    el proceso completo.</p>
-            </div>
             <div class="programs-grid">
+
                 <div class="program-card">
-                    <div class="icon">🌿</div>
+                    <div class="program-icon">🌿</div>
                     <h3>Desintoxicación médica</h3>
                     <p>Proceso supervisado por personal médico las 24 horas, para manejar el retiro de forma segura y
-                        con el menor
-                        malestar posible.</p>
+                        con el menor malestar posible.</p>
                 </div>
+
                 <div class="program-card">
-                    <div class="icon">🏠</div>
+                    <div class="program-icon">🏠</div>
                     <h3>Tratamiento residencial</h3>
                     <p>Estancia en un entorno seguro y estructurado, con terapia individual, grupal y actividades de
-                        reinserción
-                        diaria.</p>
+                        reinserción diaria.</p>
                 </div>
+
                 <div class="program-card">
-                    <div class="icon">🤝</div>
+                    <div class="program-icon">🤝</div>
                     <h3>Programa ambulatorio</h3>
                     <p>Sesiones de terapia y seguimiento para quienes continúan con su vida diaria mientras avanzan en
-                        su
-                        recuperación.</p>
+                        su recuperación.</p>
                 </div>
+
                 <div class="program-card">
-                    <div class="icon">👪</div>
+                    <div class="program-icon">👪</div>
                     <h3>Terapia familiar</h3>
                     <p>Espacios de trabajo con familiares, porque la recuperación también involucra a quienes rodean al
-                        paciente.
-                    </p>
+                        paciente.</p>
                 </div>
+
                 <div class="program-card">
-                    <div class="icon">🧭</div>
+                    <div class="program-icon">🧭</div>
                     <h3>Seguimiento post-alta</h3>
                     <p>Acompañamiento continuo durante los primeros meses fuera del centro, para sostener lo avanzado.
                     </p>
                 </div>
+
                 <div class="program-card">
-                    <div class="icon">💬</div>
+                    <div class="program-icon">💬</div>
                     <h3>Grupos de apoyo</h3>
                     <p>Encuentros semanales entre pacientes y egresados para compartir experiencias y fortalecer la red
-                        de apoyo.
-                    </p>
+                        de apoyo.</p>
                 </div>
+
             </div>
         </div>
-    </section> <!-- AQUÍ VA EL CONTENIDO ESPECÍFICO DE CADA SECCIÓN -->
+    </section>
+
+    <!-- CTA -->
+    <section class="programs-cta">
+        <div class="wrap">
+            <p class="eyebrow">Siguiente paso</p>
+            <h2>Conoce cómo funciona el proceso</h2>
+            <p>Te explicamos de forma clara los 4 pasos desde el primer contacto hasta el ingreso.</p>
+            <a href="proceso.html" class="btn btn-primary">
+                Ver el proceso
+            </a>
+        </div>
+    </section>
 
     <footer>
-        © 2026 Una oportunidad mas · Casa cristiana de rehabilitación y desintoxicación ·
-
+        © 2026 Una Oportunidad Más · Casa cristiana de rehabilitación y desintoxicación
     </footer>
 
     <script>
@@ -101,7 +127,7 @@
         onScroll();
     </script>
 
-  <script src="js/nav.js" defer></script>
+    <script src="js/nav.js" defer></script>
 </body>
 
 </html>

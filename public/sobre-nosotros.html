@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nosotros · Puerto Nuevo</title>
+    <title>Sobre nosotros · Una Oportunidad Más</title>
+    <meta name="description"
+        content="Conoce Una Oportunidad Más, casa cristiana de rehabilitación y desintoxicación. Atención especializada, confidencial y disponible 24/7.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap"
@@ -14,167 +16,159 @@
 
 <body>
 
+    <!-- Header Navigation -->
     <header>
         <nav class="nav-wrap">
             <a href="index.html" class="logo">
                 <img src="imagenes-uomasweb/LOGOTIPO DE LA CLINICA PLUS.svg"
-                    alt="Casa cristiana de rehabilitación y desintoxicación · Una Oportunidad Más">
+                    alt="Una Oportunidad Más · Casa Cristiana de Rehabilitación">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
             <ul id="navMenu">
-                <li><a href="index.html"><span class="nav-icon">🏠</span>Inicio</a></li>
-                <li><a href="sobre-nosotros.html"><span class="nav-icon">🌿</span>Sobre nosotros</a></li>
-                <li><a href="programas.html"><span class="nav-icon">🩺</span>Programas</a></li>
-                <li><a href="proceso.html"><span class="nav-icon">🧭</span>Proceso</a></li>
-                <li><a href="contacto.html"><span class="nav-icon">📞</span>Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html" class="active">Sobre nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="proceso.html">Proceso</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="btn btn-header">Hablar con
                 alguien</a>
         </nav>
     </header>
 
+    <!-- Hero Banner -->
     <section class="page-banner">
         <div class="wrap">
-            <div class="eyebrow">Conócenos</div>
-            <h1>Sobre nosotros</h1>
-            <p>Un lugar seguro para comenzar de nuevo, acompañados de fe, profesionalismo y calidez humana.</p>
+            <svg class="page-banner-ornament" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 4 L22 40 M8 12 Q22 20 36 12" stroke="currentColor" stroke-width="1.3"
+                    stroke-linecap="round" />
+                <circle cx="22" cy="22" r="3" fill="currentColor" />
+            </svg>
+            <span class="eyebrow">Conócenos</span>
+            <h1>Sobre Nosotros</h1>
+            <p class="hero-subtitle">Un lugar seguro para comenzar de nuevo, acompañados de fe, profesionalismo y
+                calidez humana.</p>
         </div>
     </section>
 
-    <section class="about-centrado" id="sobre-nosotros">
-        <div class="decoracion-lineas-izq">
-            <svg viewBox="0 0 60 400" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30 10 C 10 60, 50 100, 30 150 S 10 240, 30 290 S 50 360, 30 390" fill="none"
-                    stroke="currentColor" stroke-width="1.5" />
-                <circle cx="30" cy="10" r="4" fill="currentColor" />
-                <circle cx="30" cy="150" r="4" fill="currentColor" />
-                <circle cx="30" cy="290" r="4" fill="currentColor" />
-                <circle cx="30" cy="390" r="4" fill="currentColor" />
-            </svg>
-        </div>
-        <div class="decoracion-lineas-der">
-            <svg viewBox="0 0 60 400" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30 10 C 50 60, 10 100, 30 150 S 50 240, 30 290 S 10 360, 30 390" fill="none"
-                    stroke="currentColor" stroke-width="1.5" />
-                <circle cx="30" cy="10" r="4" fill="currentColor" />
-                <circle cx="30" cy="150" r="4" fill="currentColor" />
-                <circle cx="30" cy="290" r="4" fill="currentColor" />
-                <circle cx="30" cy="390" r="4" fill="currentColor" />
-            </svg>
-        </div>
+    <!-- Main Content Section -->
+    <section class="about-section" id="sobre-nosotros">
+        <div class="wrap">
 
-        <div class="wrap about-centrado-contenido">
-            <p class="about-intro">
-                Somos una clínica de desintoxicación cristiana especializada en el tratamiento de adicciones al alcohol,
-                drogas y otras dependencias. Atendemos tanto a hombres como a mujeres.
-            </p>
+            <!-- Highlight / Lead Paragraph -->
+            <div class="about-lead-box">
+                <p class="about-intro">
+                    Somos una clínica de desintoxicación cristiana especializada en el tratamiento integral de
+                    adicciones al alcohol, drogas y otras dependencias. brindando un espacio seguro y profesional tanto
+                    para <strong>hombres</strong> como para <strong>mujeres</strong>.
+                </p>
+            </div>
 
-            <p>
-                Nuestro programa residencial incluye atención médica durante el proceso de desintoxicación, terapia
-                psicológica individual y grupal, así como actividades enfocadas en la prevención de recaídas y la
-                recuperación integral del paciente.
-            </p>
+            <!-- Grid de Características / Pilares -->
+            <div class="about-grid">
 
-            <p>
-                Nuestro compromiso es trabajar con eficiencia y tacto, para que cada persona se sienta segura,
-                acompañada y pueda ver una mejora real tanto física como mental. Todo el proceso se maneja con total
-                confidencialidad.
-            </p>
+                <div class="about-card">
+                    <div class="card-icon">🩺</div>
+                    <h3>Atención Especializada</h3>
+                    <p>Nuestro programa residencial incluye atención médica continua durante la fase de desintoxicación
+                        y seguimiento cercano durante todo el proceso.</p>
+                </div>
 
+                <div class="about-card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Recuperación Integral</h3>
+                    <p>Ofrecemos terapia psicológica individual y grupal, reforzada con actividades estratégicas
+                        enfocadas en la prevención de recaídas.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Confidencialidad y Empatía</h3>
+                    <p>Trabajamos con absoluta discreción y tacto. Entendemos cada caso desde un enfoque humano para
+                        asegurar una mejoría física y mental real.</p>
+                </div>
+
+            </div>
+
+            <!-- Métricas / Estadísticas -->
             <div class="stat-row">
-                <div class="stat">
-                    <div class="num">12</div>
-                    <div class="label">años de experiencia</div>
+                <div class="stat-item">
+                    <span class="num">12+</span>
+                    <span class="label">Años de experiencia</span>
                 </div>
-                <div class="stat">
-                    <div class="num">24/7</div>
-                    <div class="label">atención disponible</div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="num">24/7</span>
+                    <span class="label">Atención y cuidado</span>
                 </div>
-                <div class="stat">
-                    <div class="num">100%</div>
-                    <div class="label">confidencial</div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="num">100%</span>
+                    <span class="label">Confidencialidad</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Ventaja / Diferenciadores -->
+    <section class="advantage-section">
+        <div class="wrap">
+            <div class="advantage-header">
+                <p class="eyebrow">Nuestra diferencia</p>
+                <h2>Más que un tratamiento, un acompañamiento integral</h2>
+                <p class="advantage-lead">
+                    Brindamos una atención integral en un ambiente seguro, digno y humano,
+                    donde cada persona recibe acompañamiento profesional durante su proceso
+                    de recuperación. Más que tratar una adicción, trabajamos para restaurar
+                    vidas y fortalecer el bienestar de cada paciente.
+                </p>
+            </div>
+
+            <div class="advantage-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">✓</div>
+                    <h3>Experiencia</h3>
+                    <ul>
+                        <li>Personal capacitado en el tratamiento de adicciones</li>
+                        <li>Atención integral con acompañamiento durante todo el proceso</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">✓</div>
+                    <h3>Alianzas estratégicas</h3>
+                    <ul>
+                        <li>Vinculación con profesionales de la salud y bienestar</li>
+                        <li>Colaboración con instituciones que fortalecen la recuperación</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">✓</div>
+                    <h3>Servicio directo</h3>
+                    <ul>
+                        <li>Atención personalizada para cada paciente</li>
+                        <li>Seguimiento y comunicación constante</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">✓</div>
+                    <h3>Proyectos culturales</h3>
+                    <ul>
+                        <li>Talleres recreativos y de desarrollo personal</li>
+                        <li>Actividades deportivas</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <div class="decoracion-lineas-der">
-        <svg viewBox="0 0 60 400" xmlns="http://www.w3.org/2000/svg">
-            <path d="M30 10 C 50 60, 10 100, 30 150 S 50 240, 30 290 S 10 360, 30 390" fill="none" stroke="currentColor"
-                stroke-width="1.5" />
-            <circle cx="30" cy="10" r="4" fill="currentColor" />
-            <circle cx="30" cy="150" r="4" fill="currentColor" />
-            <circle cx="30" cy="290" r="4" fill="currentColor" />
-            <circle cx="30" cy="390" r="4" fill="currentColor" />
-        </svg>
-    </div>
 
-    <div class="wrap about-centrado-contenido">
-        <p class="about-intro">
-            Somos una clínica de desintoxicación cristiana especializada en el tratamiento de adicciones al alcohol,
-            drogas y otras dependencias. Atendemos tanto a hombres como a mujeres.
-        </p>
-
-        <p>
-            Nuestro programa residencial incluye atención médica durante el proceso de desintoxicación, terapia
-            psicológica individual y grupal, así como actividades enfocadas en la prevención de recaídas y la
-            recuperación integral del paciente.
-        </p>
-
-        <p>
-            Nuestro compromiso es trabajar con eficiencia y tacto, para que cada persona se sienta segura,
-            acompañada y pueda ver una mejora real tanto física como mental. Todo el proceso se maneja con total
-            confidencialidad.
-        </p>
-
-        <div class="stat-row">
-            <div class="stat">
-                <div class="num">12</div>
-                <div class="label">años de experiencia</div>
-            </div>
-            <div class="stat">
-                <div class="num">24/7</div>
-                <div class="label">atención disponible</div>
-            </div>
-            <div class="stat">
-                <div class="num">100%</div>
-                <div class="label">confidencial</div>
-            </div>
-        </div>
-    </div>
-    </section>
-    <div class="wrap about-centrado-contenido">
-        <p>Somos una clínica de desintoxicación cristiana, contamos con un tratamiento especializado de adicciones
-            al alcohol, drogas y otras dependencias. Tanto para hombres como mujeres.
-
-            Nuestro programa residencial incluye atención médica durante el proceso de desintoxicación, terapia
-            psicológica individual y grupal, así como actividades enfocadas en la prevención de recaídas y la
-            recuperación integral del paciente.
-        </p>
-        <p>Nuestro compromiso es absolutamente eficiente y con tacto, para que de esa manera el paciente
-            pueda sentirse seguro, acompañado y sobre todo pueda ver la mejora tanto física como mental.
-
-        <p>Tenga la seguridad de que para todo hay confidencialidad, y que entedemos por los problemas que haya
-            pasado la persona, visitenos en nuestra casa de rahbilitacion 😊</p>
-        </p>
-
-        <div class="stat-row">
-            <div class="stat">
-                <div class="num">12</div>
-                <div class="label">años de experiencia</div>
-            </div>
-            <div class="stat">
-                <div class="num">24/7</div>
-                <div class="label">atención disponible</div>
-            </div>
-            <div class="stat">
-                <div class="num">100%</div>
-                <div class="label">confidencial</div>
-            </div>
-        </div>
-    </div>
-    </section>
+    <!-- Footer -->
     <footer>
-        © 2026 Una oportunidad mas · Casa cristiana de rehabilitación y desintoxicación ·
+        <div class="wrap">
+            <p>© 2026 Una Oportunidad Más · Casa cristiana de rehabilitación y desintoxicación.</p>
+        </div>
     </footer>
 
     <script>
@@ -186,7 +180,6 @@
         window.addEventListener('scroll', onScroll);
         onScroll();
     </script>
-
     <script src="js/nav.js" defer></script>
 </body>
 

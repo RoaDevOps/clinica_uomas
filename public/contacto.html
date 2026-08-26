@@ -21,88 +21,143 @@
                     alt="Casa cristiana de rehabilitación y desintoxicación · Una Oportunidad Más">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
-      <ul id="navMenu">
+            <ul id="navMenu">
                 <li><a href="index.html"><span class="nav-icon">🏠</span>Inicio</a></li>
                 <li><a href="sobre-nosotros.html"><span class="nav-icon">🌿</span>Sobre nosotros</a></li>
                 <li><a href="programas.html"><span class="nav-icon">🩺</span>Programas</a></li>
                 <li><a href="proceso.html"><span class="nav-icon">🧭</span>Proceso</a></li>
-                <li><a href="contacto.html"><span class="nav-icon">📞</span>Contacto</a></li>
+                <li><a href="contacto.html" class="active"><span class="nav-icon">📞</span>Contacto</a></li>
             </ul>
-            <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="btn btn-header">Hablar con alguien</a>
+            <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="btn btn-header">Hablar con
+                alguien</a>
         </nav>
     </header>
 
+    <!-- Banner de página -->
+    <section class="page-banner">
+        <div class="wrap">
+            <svg class="page-banner-ornament" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 4 L22 40 M8 12 Q22 20 36 12" stroke="currentColor" stroke-width="1.3"
+                    stroke-linecap="round" />
+                <circle cx="22" cy="22" r="3" fill="currentColor" />
+            </svg>
+            <span class="eyebrow">Contacto</span>
+            <h1>Estamos para escucharte</h1>
+            <p class="hero-subtitle">Todo lo que compartas es confidencial. Da el primer paso cuando te sientas listo.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
     <section class="contact" id="contacto">
         <div class="wrap contact-grid">
-            <div>
-                <div class="eyebrow">Contacto</div>
+
+            <!-- Columna izquierda: info -->
+            <div class="contact-info-side">
+                <div class="eyebrow">Hablemos</div>
                 <h2>Da el primer paso hoy</h2>
-                <p>Escríbenos o llama a nuestra línea de atención. Todo lo que compartas es confidencial.</p>
+                <p>Escríbenos o llama a nuestra línea de atención. Un consejero te responderá con respeto y sin juicio.
+                </p>
+
                 <div class="contact-info">
-                    <div class="row"><span class="label">Teléfono</span> 55 2380 8757</div>
-                    <div class="row"><span class="label">Correo</span> miguelamg836@gmail.com</div>
-                    <div class="row"><span class="label">Dirección</span> calle gorriones 22 loma del río Nicolás romero
-                        Mex, Estado de México, Mexico, 54463
+                    <div class="row">
+                        <span class="label">Teléfono</span>
+                        <a href="tel:+525523808757">55 2380 8757</a>
+                    </div>
+                    <div class="row">
+                        <span class="label">WhatsApp</span>
+                        <a href="https://wa.me/525523808757" target="_blank" rel="noopener">Enviar mensaje</a>
+                    </div>
+                    <div class="row">
+                        <span class="label">Correo</span>
+                        <a href="mailto:miguelamg836@gmail.com">miguelamg836@gmail.com</a>
+                    </div>
+                    <div class="row">
+                        <span class="label">Dirección</span>
+                        <span>Calle Gorriones 22, Loma del Río<br>Nicolás Romero, Estado de México, 54463</span>
                     </div>
                 </div>
+
+                <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    Hablar por WhatsApp
+                </a>
             </div>
-            <form id="form-contacto"> <input type="text" placeholder="Nombre" required>
-                <input type="tel" placeholder="Teléfono" required>
-                <textarea placeholder="Cuéntanos brevemente tu situación (opcional)"></textarea>
-                <button type="submit" class="btn btn-gold">Enviar</button>
-                <p id="form-status" style="margin-top: 10px; font-size: 0.9rem;"></p>
-            </form>
+
+            <!-- Columna derecha: formulario -->
+            <div class="contact-form-side">
+                <form id="form-contacto">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje <span>(opcional)</span></label>
+                        <textarea id="mensaje" name="mensaje"
+                            placeholder="Cuéntanos brevemente tu situación..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold">Enviar mensaje</button>
+                    <p id="form-status"></p>
+                </form>
+            </div>
+
         </div>
-    </section> <!-- AQUÍ VA EL CONTENIDO ESPECÍFICO DE CADA SECCIÓN -->
+    </section>
 
     <footer>
-        © 2026 Una oportunidad mas · Casa cristiana de rehabilitación y desintoxicación ·
+        © 2026 Una Oportunidad Más · Casa cristiana de rehabilitación y desintoxicación
+    </footer>
 
-        <script>
-            const form = document.getElementById('form-contacto');
-            const status = document.getElementById('form-status');
+    <script>
+        const form = document.getElementById('form-contacto');
+        const status = document.getElementById('form-status');
 
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
 
-                const nombre = form.querySelector('input[type="text"]').value;
-                const telefono = form.querySelector('input[type="tel"]').value;
-                const mensaje = form.querySelector('textarea').value;
+            const nombre = form.querySelector('#nombre').value;
+            const telefono = form.querySelector('#telefono').value;
+            const mensaje = form.querySelector('#mensaje').value;
 
-                status.textContent = 'Enviando...';
+            status.textContent = 'Enviando...';
+            status.style.color = 'rgba(245, 245, 243, 0.7)';
 
-                try {
-                    const respuesta = await fetch('/api/contacto', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ nombre, telefono, mensaje })
-                    });
+            try {
+                const respuesta = await fetch('/api/contacto', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ nombre, telefono, mensaje })
+                });
 
-                    const datos = await respuesta.json();
+                const datos = await respuesta.json();
 
-                    if (datos.ok) {
-                        status.textContent = datos.mensaje;
-                        status.style.color = '#B7E4D8';
-                        form.reset();
-                    } else {
-                        status.textContent = datos.error || 'Ocurrió un error, intenta de nuevo.';
-                        status.style.color = '#c0392b';
-                    }
-                } catch (error) {
-                    status.textContent = 'No se pudo conectar con el servidor.';
-                    status.style.color = '#c0392b';
+                if (datos.ok) {
+                    status.textContent = datos.mensaje || 'Mensaje enviado correctamente.';
+                    status.style.color = '#B7E4D8';
+                    form.reset();
+                } else {
+                    status.textContent = datos.error || 'Ocurrió un error, intenta de nuevo.';
+                    status.style.color = '#e8a0a0';
                 }
-            });
-            const header = document.querySelector('header');
-            const onScroll = () => {
-                if (window.scrollY > 40) header.classList.add('scrolled');
-                else header.classList.remove('scrolled');
-            };
-            window.addEventListener('scroll', onScroll);
-            onScroll();
-        </script>
+            } catch (error) {
+                status.textContent = 'No se pudo conectar con el servidor.';
+                status.style.color = '#e8a0a0';
+            }
+        });
 
-  <script src="js/nav.js" defer></script>
+        const header = document.querySelector('header');
+        const onScroll = () => {
+            if (window.scrollY > 40) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        };
+        window.addEventListener('scroll', onScroll);
+        onScroll();
+    </script>
+
+    <script src="js/nav.js" defer></script>
 </body>
 
 </html>
