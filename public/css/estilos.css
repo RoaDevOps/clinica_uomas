@@ -753,43 +753,25 @@ section[id] {
     margin-bottom: 72px;
 }
 
+/* Cards pilares */
 .about-card {
     background: #fff;
-    border: 1px solid rgba(46, 114, 104, 0.1);
-    border-radius: 18px;
-    padding: 36px 28px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 2rem 1.75rem;
     text-align: center;
-    box-shadow: 0 6px 24px rgba(46, 114, 104, 0.06);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition:
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.45s ease;
 }
 
 .about-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 36px rgba(46, 114, 104, 0.13);
-}
-
-.about-card .card-icon {
-    width: 56px;
-    height: 56px;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    background: rgba(46, 114, 104, 0.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.6rem;
-}
-
-.about-card h3 {
-    font-size: 1.15rem;
-    margin-bottom: 10px;
-    color: var(--dark);
-}
-
-.about-card p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    color: rgba(42, 58, 74, 0.72);
+    transform: translateY(-4px);
+    border-color: rgba(26, 58, 42, 0.12);
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.04),
+        0 12px 32px rgba(0, 0, 0, 0.06);
 }
 
 /* Métricas con divisores verticales */
@@ -834,16 +816,25 @@ section[id] {
     background: rgba(46, 114, 104, 0.15);
 }
 
-/* Banner de título "Sobre Nosotros" y páginas internas */
 .page-banner {
     position: relative;
-    padding: 170px 0 110px;
+    padding: 220px 0 180px;
     background:
-        radial-gradient(circle, rgba(27, 58, 107, 0.06) 1px, transparent 1px),
-        linear-gradient(180deg, #EAEDEC 0%, #F2F4F3 100%);
-    background-size: 22px 22px, 100% 100%;
+        linear-gradient(180deg, rgba(20, 32, 29, 0.55) 0%, rgba(20, 32, 29, 0.35) 60%, rgba(20, 32, 29, 0.7) 100%),
+        url('../imagenes-uomasweb/BANNER SOBRE NOSOTROS.jpeg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
     overflow: hidden;
+}
+
+.page-banner .hero-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.page-banner-ornament {
+    color: #fff;
+    opacity: 0.75;
 }
 
 .page-banner .eyebrow {
@@ -865,25 +856,6 @@ section[id] {
     height: 1px;
     background: #1B3A6B;
     opacity: 0.45;
-}
-
-.page-banner h1 {
-    color: var(--dark);
-    font-size: clamp(2.4rem, 5vw, 3.4rem);
-    margin: 0 0 10px;
-    line-height: 1.15;
-    position: relative;
-    display: inline-block;
-}
-
-.page-banner h1::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #1B3A6B, transparent);
-    margin: 22px auto 0;
-    opacity: 0.5;
 }
 
 .page-banner .hero-subtitle {
@@ -1044,24 +1016,17 @@ section[id] {
     border-radius: 12px 12px 12px 3px;
 }
 
-/* Header con buen contraste sobre fondos claros (páginas internas) */
 header {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(6px);
+    background: transparent;
+
 }
 
-header:not(.scrolled) nav a {
-    color: var(--dark);
+header.scrolled {
+    background: rgba(46, 114, 104, 0.97);
+
 }
 
-header:not(.scrolled) .nav-toggle {
-    color: var(--dark);
-}
 
-header:not(.scrolled) .btn-header {
-    background: var(--dark);
-    color: #fff !important;
-}
 
 nav a.active {
     opacity: 1;
@@ -1598,18 +1563,26 @@ nav a.active {
     gap: 24px;
 }
 
+/* Cards ventaja */
 .advantage-card {
     background: #fff;
-    border: 1px solid rgba(46, 114, 104, 0.1);
-    border-radius: 18px;
-    padding: 32px 28px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 1.75rem 1.75rem 1.5rem;
+    transition:
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.45s ease;
 }
 
 .advantage-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 36px rgba(46, 114, 104, 0.1);
+    transform: translateY(-3px);
+    border-color: rgba(26, 58, 42, 0.12);
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.03),
+        0 10px 28px rgba(0, 0, 0, 0.05);
 }
+
 
 .advantage-icon {
     width: 36px;
@@ -1691,4 +1664,1114 @@ nav a.active {
     width: min(180px, 40%);
     height: 1px;
     background: linear-gradient(90deg, transparent, rgba(46, 114, 104, 0.35), transparent);
+}
+
+/* Corrección final: texto blanco sobre imagen de fondo */
+.page-banner h1 {
+    color: #ffffff !important;
+}
+
+.page-banner .eyebrow {
+    color: #ffffff !important;
+    background: none !important;
+}
+
+.page-banner .eyebrow::before,
+.page-banner .eyebrow::after {
+    background: #ffffff !important;
+    opacity: 0.7;
+}
+
+.page-banner .hero-subtitle {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.page-banner-ornament {
+    color: #ffffff !important;
+}
+
+.page-banner--programas {
+    background-image:
+        linear-gradient(180deg, rgba(20, 32, 29, 0.55) 0%, rgba(20, 32, 29, 0.35) 60%, rgba(20, 32, 29, 0.7) 100%),
+        url('../imagenes-uomasweb/BANNER PROGRAMAS.jpeg');
+}
+
+.page-banner--proceso {
+    background-image:
+        linear-gradient(180deg, rgba(20, 32, 29, 0.55) 0%, rgba(20, 32, 29, 0.35) 60%, rgba(20, 32, 29, 0.7) 100%),
+        url('../imagenes-uomasweb/BANNER PROCESO.jpeg');
+}
+
+.page-banner--contacto {
+    background-image:
+        linear-gradient(180deg, rgba(20, 32, 29, 0.55) 0%, rgba(20, 32, 29, 0.35) 60%, rgba(20, 32, 29, 0.7) 100%),
+        url('../imagenes-uomasweb/BANNER CONTACTO.jpeg');
+}
+
+/* Divisor decorativo entre secciones del index */
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 auto 56px;
+    max-width: 200px;
+}
+
+.section-divider::before,
+.section-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(46, 114, 104, 0.25);
+}
+
+.section-divider span {
+    color: #1B3A6B;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+/* =========================================================
+   SECCIÓN CONÓCENOS
+========================================================= */
+
+.conocenos-section {
+    position: relative;
+    padding: 110px 20px 120px;
+    background: #f7f8f6;
+    overflow: hidden;
+}
+
+
+/* Decoración sutil */
+
+.conocenos-section::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(44, 95, 93, 0.045);
+    top: -220px;
+    left: -180px;
+}
+
+.conocenos-section::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(196, 164, 91, 0.05);
+    bottom: -180px;
+    right: -150px;
+}
+
+
+/* CONTENEDOR */
+
+.conocenos-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.conocenos-header {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+
+.conocenos-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    color: #c4a45b;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.conocenos-eyebrow span {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+
+.conocenos-header h2 {
+    margin: 0 0 20px;
+
+    color: #1a3c3a;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    line-height: 1.15;
+    font-weight: 600;
+}
+
+
+.conocenos-header p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #65706d;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.conocenos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
+.conocenos-card {
+    display: block;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(44, 95, 93, 0.10);
+
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 10px 30px rgba(26, 60, 58, 0.07);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+.conocenos-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(196, 164, 91, 0.45);
+
+    box-shadow:
+        0 22px 45px rgba(26, 60, 58, 0.14);
+}
+
+
+/* =========================================================
+   IMAGEN
+========================================================= */
+
+.conocenos-image {
+    position: relative;
+
+    height: 245px;
+
+    overflow: hidden;
+}
+
+
+.conocenos-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.conocenos-card:hover .conocenos-image img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   DEGRADADO
+========================================================= */
+
+.conocenos-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(to top,
+            rgba(20, 43, 41, 0.72),
+            rgba(20, 43, 41, 0.08) 65%,
+            transparent);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   NUMERACIÓN
+========================================================= */
+
+.conocenos-number {
+    position: absolute;
+
+    top: 17px;
+    left: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    color: #1a3c3a;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   FLECHA
+========================================================= */
+
+.conocenos-arrow {
+    position: absolute;
+
+    right: 18px;
+    top: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.14);
+
+    color: #ffffff;
+
+    font-size: 1.2rem;
+
+    backdrop-filter: blur(5px);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.conocenos-card:hover .conocenos-arrow {
+    background: #c4a45b;
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   CONTENIDO
+========================================================= */
+
+.conocenos-card-content {
+    padding: 24px 22px 25px;
+}
+
+
+.conocenos-card-content h3 {
+    margin: 0 0 9px;
+
+    color: #1a3c3a;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+
+.conocenos-card-content p {
+    min-height: 52px;
+
+    margin: 0 0 20px;
+
+    color: #687370;
+
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   LINK
+========================================================= */
+
+.conocenos-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #2c5f5d;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+.conocenos-link span {
+    transition: transform 0.3s ease;
+}
+
+
+.conocenos-card:hover .conocenos-link span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .conocenos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .conocenos-section {
+        padding: 75px 18px 85px;
+    }
+
+
+    .conocenos-header {
+        margin-bottom: 38px;
+    }
+
+
+    .conocenos-header h2 {
+        font-size: 2.15rem;
+    }
+
+
+    .conocenos-header p {
+        font-size: 0.98rem;
+    }
+
+
+    .conocenos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .conocenos-image {
+        height: 220px;
+    }
+
+
+    .conocenos-card-content {
+        padding: 22px 20px 24px;
+    }
+
+}
+
+/* Subtítulo tipo "No te preocupes" */
+.process-reassurance {
+    text-align: center;
+    color: #1B3A6B;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.process-reassurance::before,
+.process-reassurance::after {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: #1B3A6B;
+    opacity: 0.4;
+}
+
+/* ============================================
+   SOBRE NOSOTROS — refinamiento visual
+   ============================================ */
+
+/* Lead */
+.about-lead-box {
+    max-width: 720px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.about-intro {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--text, #2c2c2c);
+    margin: 0;
+}
+
+.about-intro strong {
+    font-weight: 600;
+    color: var(--primary, #1a3a2a);
+}
+
+/* Grid de pilares */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    margin-bottom: 3.5rem;
+}
+
+.about-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 2rem 1.75rem;
+    text-align: center;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-card:hover {
+    border-color: rgba(26, 58, 42, 0.18);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary, #1a3a2a);
+}
+
+.card-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.about-card h3 {
+    font-family: "Fraunces", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 0 0.75rem;
+    color: var(--heading, #1a1a1a);
+}
+
+.about-card p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--text-muted, #555);
+    margin: 0;
+}
+
+/* Stats */
+.stat-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 2rem 1.5rem;
+    background: var(--surface-alt, #f7f6f3);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.stat-item {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+.stat-item .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--primary, #1a3a2a);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.35rem;
+}
+
+.stat-item .label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted, #666);
+    letter-spacing: 0.02em;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+/* Advantage section */
+.advantage-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    background: var(--surface-alt, #f7f6f3);
+}
+
+.advantage-header {
+    max-width: 680px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.advantage-header .eyebrow {
+    margin-bottom: 0.75rem;
+}
+
+.advantage-header h2 {
+    font-family: "Fraunces", serif;
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0 0 1rem;
+    color: var(--heading, #1a1a1a);
+}
+
+.advantage-lead {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted, #555);
+    margin: 0;
+}
+
+.advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.advantage-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 1.75rem 1.75rem 1.5rem;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.advantage-card:hover {
+    border-color: rgba(26, 58, 42, 0.18);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+.advantage-num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary, #1a3a2a);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.85rem;
+    opacity: 0.85;
+}
+
+.advantage-card h3 {
+    font-family: "Fraunces", serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 0 0 0.85rem;
+    color: var(--heading, #1a1a1a);
+}
+
+.advantage-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advantage-card li {
+    position: relative;
+    padding-left: 1.15rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--text-muted, #555);
+    margin-bottom: 0.5rem;
+}
+
+.advantage-card li:last-child {
+    margin-bottom: 0;
+}
+
+.advantage-card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--primary, #1a3a2a);
+    opacity: 0.55;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .advantage-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-lead-box {
+        margin-bottom: 2.5rem;
+    }
+
+    .about-intro {
+        font-size: 1.05rem;
+    }
+
+    .stat-row {
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1.75rem 1.25rem;
+    }
+
+    .stat-divider {
+        width: 40px;
+        height: 1px;
+    }
+
+    .stat-item .num {
+        font-size: 1.5rem;
+    }
+
+    .advantage-section {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
+
+/* =========================================================
+   CARDS — hover suave (prioridad final)
+   ========================================================= */
+
+.about-section .about-card,
+.advantage-section .advantage-card {
+    transition:
+        transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.55s ease !important;
+    will-change: transform, box-shadow;
+}
+
+.about-section .about-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(46, 114, 104, 0.18) !important;
+    box-shadow:
+        0 6px 16px rgba(46, 114, 104, 0.06),
+        0 16px 40px rgba(46, 114, 104, 0.1) !important;
+}
+
+.advantage-section .advantage-card:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(46, 114, 104, 0.18) !important;
+    box-shadow:
+        0 5px 14px rgba(46, 114, 104, 0.05),
+        0 14px 36px rgba(46, 114, 104, 0.09) !important;
+}
+
+/* Evitar que reduced-motion apague solo estas si no quieres */
+@media (prefers-reduced-motion: reduce) {
+
+    .about-section .about-card,
+    .advantage-section .advantage-card {
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+/* =========================================================
+   CONTACTO PREMIUM
+   ========================================================= */
+
+.contact-premium {
+    padding: 90px 0 100px;
+}
+
+.contact-premium .contact-lead {
+    color: rgba(245, 245, 243, 0.75);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 42ch;
+    margin: 0 0 2rem;
+}
+
+/* Mini cards de contacto */
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 18px;
+    background: rgba(245, 245, 243, 0.05);
+    border: 1px solid rgba(245, 245, 243, 0.1);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition:
+        background 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.35s ease;
+}
+
+a.contact-card:hover {
+    background: rgba(245, 245, 243, 0.09);
+    border-color: rgba(183, 228, 216, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card--static {
+    cursor: default;
+}
+
+.contact-card-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(245, 245, 243, 0.08);
+    color: #B7E4D8;
+}
+
+.contact-card-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.contact-card-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #AEB9C4;
+}
+
+.contact-card-value {
+    font-size: 0.98rem;
+    color: var(--paper);
+    line-height: 1.45;
+    word-break: break-word;
+}
+
+.contact-card-hint {
+    font-size: 0.8rem;
+    color: rgba(183, 228, 216, 0.75);
+    margin-top: 2px;
+}
+
+/* WhatsApp button refinements */
+.contact-premium .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 26px;
+    border-radius: 12px 12px 12px 3px;
+    font-weight: 500;
+    transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.4s ease;
+}
+
+.contact-premium .btn-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.35);
+}
+
+/* Form side */
+.contact-premium .contact-form-side {
+    background: rgba(245, 245, 243, 0.06);
+    border: 1px solid rgba(245, 245, 243, 0.12);
+    border-radius: 20px;
+    padding: 36px 32px 32px;
+}
+
+.form-header {
+    margin-bottom: 1.75rem;
+}
+
+.form-header h3 {
+    font-family: "Fraunces", serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--paper);
+    margin: 0 0 0.4rem;
+}
+
+.form-header p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: rgba(245, 245, 243, 0.65);
+    line-height: 1.5;
+}
+
+.contact-premium .form-group {
+    margin-bottom: 1.1rem;
+}
+
+.contact-premium .form-group label {
+    display: block;
+    font-size: 0.88rem;
+    color: rgba(245, 245, 243, 0.72);
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+.contact-premium .form-group label span {
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.contact-premium .contact-form-side input,
+.contact-premium .contact-form-side textarea {
+    width: 100%;
+    background: rgba(245, 245, 243, 0.07);
+    border: 1px solid rgba(245, 245, 243, 0.2);
+    border-radius: 12px;
+    padding: 14px 16px;
+    color: var(--paper);
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-premium .contact-form-side input:focus,
+.contact-premium .contact-form-side textarea:focus {
+    outline: none;
+    border-color: rgba(183, 228, 216, 0.5);
+    background: rgba(245, 245, 243, 0.1);
+    box-shadow: 0 0 0 3px rgba(183, 228, 216, 0.12);
+}
+
+.contact-premium .contact-form-side textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-premium .btn-gold {
+    width: 100%;
+    padding: 15px;
+    margin-top: 6px;
+    font-size: 1rem;
+    border-radius: 12px 12px 12px 3px;
+    border: none;
+    cursor: pointer;
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.35s ease,
+        background 0.3s ease;
+}
+
+.contact-premium .btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.form-privacy {
+    margin: 14px 0 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: rgba(245, 245, 243, 0.5);
+    text-align: center;
+}
+
+.form-status {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    text-align: center;
+    min-height: 1.4em;
+}
+
+.form-status--pending {
+    color: rgba(245, 245, 243, 0.7);
+}
+
+.form-status--success {
+    color: #B7E4D8;
+}
+
+.form-status--error {
+    color: #e8a0a0;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+    .contact-premium {
+        padding: 70px 0 80px;
+    }
+
+    .contact-premium .contact-form-side {
+        padding: 28px 22px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        padding: 14px 14px;
+    }
+
+    .contact-card-icon {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* =========================================================
+   Header social: WhatsApp + Facebook
+   ========================================================= */
+
+.header-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.header-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: #fff;
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.35s ease;
+}
+
+.header-social-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.header-social-btn:hover {
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+/* WhatsApp */
+.header-social-btn--whatsapp:hover {
+    background: #25D366;
+    border-color: #25D366;
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+}
+
+/* Facebook */
+.header-social-btn--facebook:hover {
+    background: #1877F2;
+    border-color: #1877F2;
+    box-shadow: 0 6px 18px rgba(24, 119, 242, 0.4);
+}
+
+/* Cuando el header está scrolled (fondo sólido) */
+header.scrolled .header-social-btn {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Móvil: un poco más pequeños si hace falta */
+@media (max-width: 860px) {
+    .header-social {
+        gap: 8px;
+        margin-right: 8px;
+    }
+
+    .header-social-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .header-social-btn svg {
+        width: 18px;
+        height: 18px;
+    }
 }

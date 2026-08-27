@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto· Puerto Nuevo</title>
+    <title>Contacto · Una Oportunidad Más</title>
+    <meta name="description"
+        content="Contacta a Una Oportunidad Más. Atención confidencial 24/7. Teléfono, WhatsApp y formulario seguro.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap"
@@ -22,19 +24,36 @@
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
             <ul id="navMenu">
-                <li><a href="index.html"><span class="nav-icon">🏠</span>Inicio</a></li>
-                <li><a href="sobre-nosotros.html"><span class="nav-icon">🌿</span>Sobre nosotros</a></li>
-                <li><a href="programas.html"><span class="nav-icon">🩺</span>Programas</a></li>
-                <li><a href="proceso.html"><span class="nav-icon">🧭</span>Proceso</a></li>
-                <li><a href="contacto.html" class="active"><span class="nav-icon">📞</span>Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="proceso.html">Proceso</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
             </ul>
-            <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="btn btn-header">Hablar con
-                alguien</a>
+            <div class="header-social">
+                <a href="https://wa.me/525523808757" target="_blank" rel="noopener"
+                    class="header-social-btn header-social-btn--whatsapp" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.523 5.837L.057 23.285a.75.75 0 0 0 .92.92l5.448-1.466A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.72 9.72 0 0 1-4.95-1.35l-.354-.21-3.24.87.864-3.165-.23-.375A9.72 9.72 0 0 1 2.25 12 9.75 9.75 0 1 1 12 21.75z" />
+                    </svg>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=61592610150986" target="_blank" rel="noopener"
+                    class="header-social-btn header-social-btn--facebook" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+                    </svg>
+                </a>
+            </div>
         </nav>
     </header>
 
-    <!-- Banner de página -->
-    <section class="page-banner">
+    <!-- Banner (sin cambios de estructura) -->
+    <section class="page-banner page-banner--contacto">
         <div class="wrap">
             <svg class="page-banner-ornament" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 4 L22 40 M8 12 Q22 20 36 12" stroke="currentColor" stroke-width="1.3"
@@ -49,50 +68,109 @@
     </section>
 
     <!-- Sección de contacto -->
-    <section class="contact" id="contacto">
+    <section class="contact contact-premium" id="contacto">
         <div class="wrap contact-grid">
 
             <!-- Columna izquierda: info -->
             <div class="contact-info-side">
-                <div class="eyebrow">Hablemos</div>
+                <p class="eyebrow">Hablemos</p>
                 <h2>Da el primer paso hoy</h2>
-                <p>Escríbenos o llama a nuestra línea de atención. Un consejero te responderá con respeto y sin juicio.
+                <p class="contact-lead">
+                    Un consejero te atenderá con respeto y total confidencialidad.
+                    Puedes escribir o llamar cuando te sientas listo.
                 </p>
 
-                <div class="contact-info">
-                    <div class="row">
-                        <span class="label">Teléfono</span>
-                        <a href="tel:+525523808757">55 2380 8757</a>
-                    </div>
-                    <div class="row">
-                        <span class="label">WhatsApp</span>
-                        <a href="https://wa.me/525523808757" target="_blank" rel="noopener">Enviar mensaje</a>
-                    </div>
-                    <div class="row">
-                        <span class="label">Correo</span>
-                        <a href="mailto:miguelamg836@gmail.com">miguelamg836@gmail.com</a>
-                    </div>
-                    <div class="row">
-                        <span class="label">Dirección</span>
-                        <span>Calle Gorriones 22, Loma del Río<br>Nicolás Romero, Estado de México, 54463</span>
+                <div class="contact-cards">
+                    <a href="tel:+525523808757" class="contact-card">
+                        <span class="contact-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </span>
+                        <span class="contact-card-body">
+                            <span class="contact-card-label">Teléfono</span>
+                            <span class="contact-card-value">55 2380 8757</span>
+                            <span class="contact-card-hint">Disponible 24/7</span>
+                        </span>
+                    </a>
+
+                    <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="contact-card">
+                        <span class="contact-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg>
+                        </span>
+                        <span class="contact-card-body">
+                            <span class="contact-card-label">WhatsApp</span>
+                            <span class="contact-card-value">Enviar mensaje</span>
+                            <span class="contact-card-hint">Respuesta prioritaria</span>
+                        </span>
+                    </a>
+
+                    <a href="mailto:miguelamg836@gmail.com" class="contact-card">
+                        <span class="contact-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </span>
+                        <span class="contact-card-body">
+                            <span class="contact-card-label">Correo</span>
+                            <span class="contact-card-value">miguelamg836@gmail.com</span>
+                        </span>
+                    </a>
+
+                    <div class="contact-card contact-card--static">
+                        <span class="contact-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </span>
+                        <span class="contact-card-body">
+                            <span class="contact-card-label">Dirección</span>
+                            <span class="contact-card-value">
+                                Calle Gorriones 22, Loma del Río<br>
+                                Nicolás Romero, Estado de México, 54463
+                            </span>
+                        </span>
                     </div>
                 </div>
 
                 <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.523 5.837L.057 23.285a.75.75 0 0 0 .92.92l5.448-1.466A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.72 9.72 0 0 1-4.95-1.35l-.354-.21-3.24.87.864-3.165-.23-.375A9.72 9.72 0 0 1 2.25 12 9.75 9.75 0 1 1 12 21.75z" />
+                    </svg>
                     Hablar por WhatsApp
                 </a>
             </div>
 
             <!-- Columna derecha: formulario -->
             <div class="contact-form-side">
+                <div class="form-header">
+                    <h3>Escríbenos</h3>
+                    <p>Completa el formulario y te contactaremos a la brevedad.</p>
+                </div>
+
                 <form id="form-contacto">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required
+                            autocomplete="name">
                     </div>
                     <div class="form-group">
                         <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required
+                            autocomplete="tel">
                     </div>
                     <div class="form-group">
                         <label for="mensaje">Mensaje <span>(opcional)</span></label>
@@ -100,7 +178,9 @@
                             placeholder="Cuéntanos brevemente tu situación..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-gold">Enviar mensaje</button>
-                    <p id="form-status"></p>
+                    <p class="form-privacy">Tus datos son confidenciales. No compartimos tu información con terceros.
+                    </p>
+                    <p id="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
 
@@ -108,7 +188,9 @@
     </section>
 
     <footer>
-        © 2026 Una Oportunidad Más · Casa cristiana de rehabilitación y desintoxicación
+        <div class="wrap">
+            <p>© 2026 Una Oportunidad Más · Casa cristiana de rehabilitación y desintoxicación</p>
+        </div>
     </footer>
 
     <script>
@@ -123,7 +205,7 @@
             const mensaje = form.querySelector('#mensaje').value;
 
             status.textContent = 'Enviando...';
-            status.style.color = 'rgba(245, 245, 243, 0.7)';
+            status.className = 'form-status form-status--pending';
 
             try {
                 const respuesta = await fetch('/api/contacto', {
@@ -135,16 +217,16 @@
                 const datos = await respuesta.json();
 
                 if (datos.ok) {
-                    status.textContent = datos.mensaje || 'Mensaje enviado correctamente.';
-                    status.style.color = '#B7E4D8';
+                    status.textContent = datos.mensaje || 'Gracias. Te contactaremos pronto.';
+                    status.className = 'form-status form-status--success';
                     form.reset();
                 } else {
                     status.textContent = datos.error || 'Ocurrió un error, intenta de nuevo.';
-                    status.style.color = '#e8a0a0';
+                    status.className = 'form-status form-status--error';
                 }
             } catch (error) {
-                status.textContent = 'No se pudo conectar con el servidor.';
-                status.style.color = '#e8a0a0';
+                status.textContent = 'No se pudo conectar con el servidor. Puedes escribirnos por WhatsApp.';
+                status.className = 'form-status form-status--error';
             }
         });
 
