@@ -379,43 +379,6 @@ section {
     color: rgba(42, 58, 74, 0.68);
 }
 
-/* Process - versión antigua (lista) por si se usa en otra página */
-.process-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.process-item {
-    display: grid;
-    grid-template-columns: 64px 1fr;
-    gap: 20px;
-    padding: 26px 0;
-    border-bottom: 1px solid rgba(245, 245, 243, 0.2);
-}
-
-.process-item:last-child {
-    border-bottom: none;
-}
-
-.process-item .process-num {
-    font-family: 'Fraunces', serif;
-    font-size: 1.6rem;
-    color: var(--paper);
-    opacity: 0.55;
-}
-
-.process-item h3 {
-    font-size: 1.1rem;
-    margin-bottom: 6px;
-    color: var(--paper);
-}
-
-.process-item p {
-    color: rgba(245, 245, 243, 0.75);
-    font-size: 0.95rem;
-    max-width: 56ch;
-}
-
 /* Testimonials */
 .testimonial {
     background: var(--paper);
