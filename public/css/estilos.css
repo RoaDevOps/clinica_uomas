@@ -852,133 +852,6 @@ section[id] {
     }
 }
 
-/* ========== PROCESO PREMIUM (versión con tarjetas) ========== */
-.process {
-    background: var(--dark);
-    color: var(--paper);
-    padding: 90px 0 100px;
-}
-
-.process-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
-    position: relative;
-}
-
-/* Línea conectora sutil (solo desktop) */
-@media (min-width: 961px) {
-    .process-grid::before {
-        content: "";
-        position: absolute;
-        top: 100px;
-        left: 11%;
-        right: 11%;
-        height: 1px;
-        background: linear-gradient(90deg,
-                transparent,
-                rgba(255, 255, 255, 0.22) 12%,
-                rgba(255, 255, 255, 0.22) 88%,
-                transparent);
-        z-index: 0;
-        pointer-events: none;
-    }
-}
-
-.process-card {
-    background: #fff;
-    border: 1px solid rgba(46, 114, 104, 0.1);
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-        box-shadow 0.4s ease;
-}
-
-.process-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 24px 48px rgba(20, 40, 36, 0.18);
-}
-
-.process-card-frame {
-    overflow: hidden;
-}
-
-.process-card-frame img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.55s ease;
-}
-
-.process-card:hover .process-card-frame img {
-    transform: scale(1.05);
-}
-
-.process-card .process-num {
-    font-family: 'Fraunces', serif;
-    font-size: 1.7rem;
-    font-weight: 500;
-    color: var(--dark);
-    opacity: 0.85;
-    margin: 22px 22px 6px;
-    letter-spacing: -0.02em;
-    line-height: 1;
-}
-
-.process-card h3 {
-    color: var(--dark);
-    font-size: 1.2rem;
-    margin: 0 22px 10px;
-    line-height: 1.3;
-}
-
-.process-card p {
-    color: rgba(42, 58, 74, 0.68);
-    font-size: 0.92rem;
-    line-height: 1.65;
-    padding: 0 22px 26px;
-    margin: 0;
-}
-
-/* ========== CTA de cierre del proceso ========== */
-.process-cta {
-    background: var(--paper);
-    padding: 90px 0;
-    text-align: center;
-}
-
-.process-cta .eyebrow {
-    color: var(--dark);
-    letter-spacing: 0.18em;
-    font-weight: 600;
-    font-size: 0.78rem;
-    margin-bottom: 18px;
-}
-
-.process-cta h2 {
-    font-size: clamp(1.85rem, 3.5vw, 2.45rem);
-    margin-bottom: 16px;
-    color: var(--dark);
-    line-height: 1.25;
-}
-
-.process-cta p {
-    color: rgba(42, 58, 74, 0.7);
-    max-width: 460px;
-    margin: 0 auto 32px;
-    font-size: 1.05rem;
-    line-height: 1.65;
-}
-
-.process-cta .btn {
-    padding: 15px 34px;
-    font-size: 1rem;
-    border-radius: 12px 12px 12px 3px;
-}
-
 header {
     background: transparent;
 
@@ -998,13 +871,6 @@ nav a.active {
 }
 
 /* ============ RESPONSIVE ============ */
-@media (max-width: 960px) {
-    .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-}
-
 @media (max-width: 860px) {
     .nav-wrap {
         position: relative;
@@ -1100,25 +966,6 @@ nav a.active {
     }
 }
 
-@media (max-width: 600px) {
-    .process {
-        padding: 60px 0 70px;
-    }
-
-    .process-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .process-card-frame img {
-        height: 180px;
-    }
-
-    .process-cta {
-        padding: 70px 0;
-    }
-}
-
 @media (max-width: 480px) {
     .wrap {
         padding: 0 18px;
@@ -1172,16 +1019,6 @@ nav a.active {
 
     .stat .num {
         font-size: 1.5rem;
-    }
-
-    .process-item {
-        grid-template-columns: 44px 1fr;
-        gap: 12px;
-        padding: 18px 0;
-    }
-
-    .process-item .process-num {
-        font-size: 1.2rem;
     }
 
     form {
