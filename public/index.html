@@ -17,37 +17,82 @@
 
   <header>
     <nav class="nav-wrap">
+
+      <!-- LOGO -->
       <a href="index.html" class="logo">
         <img src="imagenes-uomasweb/LOGOTIPO DE LA CLINICA PLUS.svg"
           alt="Casa cristiana de rehabilitación y desintoxicación · Una Oportunidad Más">
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+
+      <!-- BOTÓN MENÚ MÓVIL -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+
+      <!-- NAVEGACIÓN -->
       <ul id="navMenu">
-        <li><a href="index.html"><span class="nav-icon">🏠</span>Inicio</a></li>
-        <li><a href="sobre-nosotros.html"><span class="nav-icon">🌿</span>Sobre nosotros</a></li>
-        <li><a href="programas.html"><span class="nav-icon">🩺</span>Programas</a></li>
-        <li><a href="proceso.html"><span class="nav-icon">🧭</span>Proceso</a></li>
-        <li><a href="contacto.html"><span class="nav-icon">📞</span>Contacto</a></li>
+
+        <li>
+          <a href="index.html" class="active">
+            Inicio
+          </a>
+        </li>
+
+        <li>
+          <a href="sobre-nosotros.html">
+            Sobre nosotros
+          </a>
+        </li>
+
+        <li>
+          <a href="programas.html">
+            Programas
+          </a>
+        </li>
+
+        <li>
+          <a href="proceso.html">
+            Proceso
+          </a>
+        </li>
+
+        <li>
+          <a href="contacto.html" class="nav-contact">
+            Contacto
+          </a>
+        </li>
+
       </ul>
+
+      <!-- REDES SOCIALES -->
       <div class="header-social">
-        <a href="https://wa.me/525523808757" target="_blank" rel="noopener"
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+5212312936667" target="_blank" rel="noopener"
           class="header-social-btn header-social-btn--whatsapp" aria-label="WhatsApp">
+
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path
-              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5 -.669-.51 -.173 -.008 -.371 -.01 -.57 -.01 -.１９８ ０ -.５２ .０７４ -.７９２ .３７２ -.２７２ .２９７ -１.０４ １.０１６ -１.０４ ２.４７９ ０ １.４６₂ １.₀₆₅ ₂.₈₇₅ ₁.₂₁₃ ₃.₀₇₄ .₁₄₉ .₁₉₈ ₂.₀₉₆ ₃.₂ ៥.₀₇₇ ₄.₄₈⁷ .⁷₀⁹ .³⁰⁶ ₁.²⁶² .⁴⁸⁹ ₁.⁶⁹⁴ .⁶²⁵ .⁷¹² .²²⁷ ₁.³⁶ .¹⁹⁵ ₁.⁸⁷¹ .¹¹⁸ .⁵⁷¹ -.₀８５ ₁.⁷５８ -.７¹⁹ ₂.₀₀₆ -₁,₄₁₃ .₂₄₈ -₀,₆₉₄ .₂₄₈ -₁,₂ Eighty-nine .₁ seventy-three -₁, four hundred thirteen - zero point zero seven four - zero point one twenty-four - zero point two seventy-two - zero point five seven - zero point three four seven z" />
             <path
-              d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.523 5.837L.057 23.285a.75.75 0 0 0 .92.92l5.448-1.466A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.72 9.72 0 0 1-4.95-1.35l-.354-.21-3.24.87.864-3.165-.23-.375A9.72 9.72 0 0 1 2.25 12 9.75 9.75 0 1 1 12 21.75z" />
+              d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.523 5.837L.057 23.285a.75.75 0 0 0 .92.92l5.448-1.466A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.72 9.72 0 0 1-4.95-1.35l-.354-.21-3.24.87.864-3.165-.23-.375A9.72 9.72 0 0 1 12 2.25a9.75 9.75 0 1 1 0 19.5z" />
           </svg>
+
         </a>
 
+        <!-- Facebook -->
         <a href="https://www.facebook.com/profile.php?id=61592610150986" target="_blank" rel="noopener"
           class="header-social-btn header-social-btn--facebook" aria-label="Facebook">
+
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path
-              d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+              d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.926-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
           </svg>
+
         </a>
+
       </div>
+
     </nav>
   </header>
 
@@ -59,8 +104,18 @@
         alt="Cocina de la Casa cristiana de rehabilitación y desintoxicación Puerto Nuevo, ambiente cálido y acogedor">
       <img src="imagenes-uomasweb/banner-naturale-2.jpeg" class="slide active"
         alt="Bosque con luz de sol entre los árboles, ambiente de calma y naturaleza">
-      <button class="slide-arrow prev" aria-label="Imagen anterior">‹</button>
-      <button class="slide-arrow next" aria-label="Siguiente imagen">›</button>
+      <button class="slide-arrow prev" aria-label="Imagen anterior">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="slide-arrow next" aria-label="Siguiente imagen">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
     </div>
     <div class="hero-text">
       <h1>Recupera tu vida, reconstruye tu futuro</h1>
@@ -74,13 +129,13 @@
     </div>
   </section>
   <!-- =========================================================
-     SECCIÓN DE BIENVENIDA
-========================================================= -->
+      SECCIÓN DE BIENVENIDA
+  ========================================================= -->
 
   <style>
     /* ================================
-     SECCIÓN PRINCIPAL
-  ================================= */
+      SECCIÓN PRINCIPAL
+    ================================= */
 
     .bienvenida {
       position: relative;
@@ -93,8 +148,8 @@
 
 
     /* ================================
-     DECORACIONES DEL FONDO
-  ================================= */
+      DECORACIONES DEL FONDO
+    ================================= */
 
     .bienvenida::before {
       content: "";
@@ -120,8 +175,8 @@
 
 
     /* ================================
-     CONTENEDOR
-  ================================= */
+      CONTENEDOR
+    ================================= */
 
     .bienvenida-contenedor {
       position: relative;
@@ -133,8 +188,8 @@
 
 
     /* ================================
-     ETIQUETA SUPERIOR
-  ================================= */
+      ETIQUETA SUPERIOR
+    ================================= */
 
     .bienvenida-etiqueta {
       display: inline-block;
@@ -151,8 +206,8 @@
 
 
     /* ================================
-     TÍTULO
-  ================================= */
+      TÍTULO
+    ================================= */
 
     .bienvenida h2 {
       margin: 0;
@@ -166,8 +221,8 @@
 
 
     /* ================================
-     LÍNEA DECORATIVA
-  ================================= */
+      LÍNEA DECORATIVA
+    ================================= */
 
     .titulo-linea {
       width: 70px;
@@ -179,8 +234,8 @@
 
 
     /* ================================
-     GALERÍA DE IMÁGENES
-  ================================= */
+      GALERÍA DE IMÁGENES
+    ================================= */
 
     .galeria-bienvenida {
       display: flex;
@@ -192,8 +247,8 @@
 
 
     /* ================================
-     TARJETAS DE IMAGEN
-  ================================= */
+      TARJETAS DE IMAGEN
+    ================================= */
 
     .imagen-card {
       width: 230px;
@@ -225,8 +280,8 @@
 
 
     /* ================================
-     IMÁGENES
-  ================================= */
+      IMÁGENES
+    ================================= */
 
     .imagen-card img {
       width: 100%;
@@ -238,8 +293,8 @@
 
 
     /* ================================
-     EFECTOS HOVER
-  ================================= */
+      EFECTOS HOVER
+    ================================= */
 
     .imagen-card:hover {
       transform: translateY(-8px);
@@ -258,8 +313,8 @@
 
 
     /* ================================
-     TEXTO
-  ================================= */
+      TEXTO
+    ================================= */
 
     .bienvenida-texto {
       max-width: 780px;
@@ -287,8 +342,8 @@
 
 
     /* ================================
-     BOTÓN
-  ================================= */
+      BOTÓN
+    ================================= */
 
     .boton-bienvenida {
       display: inline-flex;
@@ -326,8 +381,8 @@
 
 
     /* ================================
-     RESPONSIVE - TABLETS
-  ================================= */
+      RESPONSIVE - TABLETS
+    ================================= */
 
     @media (max-width: 900px) {
 
@@ -349,8 +404,8 @@
 
 
     /* ================================
-     RESPONSIVE - CELULARES
-  ================================= */
+      RESPONSIVE - CELULARES
+    ================================= */
 
     @media (max-width: 768px) {
 
@@ -411,8 +466,8 @@
 
 
     /* ================================
-     CELULARES PEQUEÑOS
-  ================================= */
+      CELULARES PEQUEÑOS
+    ================================= */
 
     @media (max-width: 480px) {
 
@@ -447,8 +502,8 @@
     }
 
     /* =================================
-   RAMITA DECORATIVA
-================================= */
+    RAMITA DECORATIVA
+  ================================= */
 
     .decoracion-ramita {
       position: absolute;
@@ -463,8 +518,8 @@
 
 
   <!-- =========================================================
-     HTML DE LA SECCIÓN
-========================================================= -->
+      HTML DE LA SECCIÓN
+  ========================================================= -->
 
   <section class="bienvenida">
     <img src="imagenes-uomasweb/FLOR 2.png" class="decoracion-ramita" alt="">
@@ -488,8 +543,8 @@
       </div>
 
       <!-- =====================================================
-         GALERÍA
-    ====================================================== -->
+          GALERÍA
+      ====================================================== -->
 
       <div class="galeria-bienvenida">
 
@@ -520,8 +575,8 @@
 
 
       <!-- =====================================================
-         TEXTO DE BIENVENIDA
-    ====================================================== -->
+          TEXTO DE BIENVENIDA
+      ====================================================== -->
 
       <div class="bienvenida-texto">
 
@@ -761,23 +816,155 @@
 
 
 
+  <!-- =========================================================
+     CIERRE / FRASE FINAL
+========================================================= -->
 
-  <section>
-    <div class="wrap">
-      <div class="testimonial">
-        <p>"CAERAS Y LLEGARAS ALO MAS PROFUNDO,NO OBSTANTE EL RESURGIR SERA MONUMENTAL,NO ES COMO EMPIEZA,ES COMO
-          TERMINA."</p>
-        <div class="who">— </div>
+  <section class="cierre-section">
+
+    <div class="cierre-decoracion cierre-decoracion-1"></div>
+    <div class="cierre-decoracion cierre-decoracion-2"></div>
+
+    <div class="cierre-container">
+
+      <span class="cierre-eyebrow">
+        ✦ Un nuevo comienzo
+      </span>
+
+      <div class="cierre-linea"></div>
+
+      <blockquote class="cierre-frase">
+        “Caerás y llegarás a lo más profundo,
+        no obstante el resurgir será monumental.
+        No es cómo empieza, es cómo termina.”
+      </blockquote>
+
+      <div class="cierre-separador">
+        <span></span>
+        ✦
+        <span></span>
       </div>
+
+      <p class="cierre-mensaje">
+        Siempre existe una oportunidad para comenzar de nuevo.
+      </p>
+
+      <a href="contacto.html" class="cierre-boton">
+        Dar el primer paso
+        <span>→</span>
+      </a>
+
     </div>
+
   </section>
 
 
+  <!-- =========================================================
+     FOOTER
+========================================================= -->
 
-  <footer>
-    © 2026 Una oportunidad mas · Casa cristiana de rehabilitación y desintoxicación ·
+  <footer class="footer-premium">
+
+    <div class="footer-container">
+
+      <!-- MARCA -->
+      <div class="footer-brand">
+
+        <a href="index.html" class="footer-logo">
+          <img src="imagenes-uomasweb/LOGOTIPO DE LA CLINICA PLUS.svg" alt="Una oportunidad más">
+        </a>
+
+        <h3>Una oportunidad más</h3>
+
+        <p>
+          Casa cristiana de rehabilitación y desintoxicación.
+          Un espacio para comenzar de nuevo.
+        </p>
+
+        <div class="footer-social">
+
+          <a href="https://wa.me/+5212312936667" target="_blank" rel="noopener" aria-label="WhatsApp">
+            WhatsApp
+          </a>
+
+          <a href="https://www.facebook.com/profile.php?id=61592610150986" target="_blank" rel="noopener"
+            aria-label="Facebook">
+            Facebook
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- NAVEGACIÓN -->
+      <div class="footer-column">
+
+        <h4>Explora</h4>
+
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="programas.html">Programas</a>
+        <a href="proceso.html">Proceso</a>
+
+      </div>
+
+
+      <!-- AYUDA -->
+      <div class="footer-column">
+
+        <h4>Atención</h4>
+
+        <a href="contacto.html">Contacto</a>
+        <a href="https://wa.me/+5212312936667" target="_blank" rel="noopener">
+          Línea de atención
+        </a>
+
+        <span class="footer-disponible">
+          Atención y orientación
+        </span>
+
+      </div>
+
+
+      <!-- CTA -->
+      <div class="footer-cta">
+
+        <span class="footer-cta-label">
+          ¿Necesitas ayuda?
+        </span>
+
+        <h3>
+          El primer paso
+          comienza aquí.
+        </h3>
+
+        <a href="contacto.html" class="footer-cta-button">
+          Contáctanos
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- BARRA INFERIOR -->
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Una oportunidad más.
+        Todos los derechos reservados.
+      </p>
+
+      <span>
+        Casa cristiana de rehabilitación y desintoxicación
+      </span>
+
+    </div>
+
   </footer>
-
   <script>
     const slides = document.querySelectorAll('.hero-banner .slide');
     let current = 0;

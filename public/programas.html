@@ -286,49 +286,6 @@
             }
         }
 
-        /* ===== FLECHA DE SCROLL ===== */
-        .page-banner {
-            position: relative;
-        }
-
-        .scroll-indicator {
-            position: absolute;
-            bottom: 34px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            color: #c4a45b;
-            text-decoration: none;
-            animation: scrollBounce 2.2s ease-in-out infinite;
-        }
-
-        .scroll-indicator-line {
-            width: 1px;
-            height: 34px;
-            background: linear-gradient(to bottom, transparent, #c4a45b);
-        }
-
-        .scroll-indicator-arrow {
-            width: 22px;
-            height: 22px;
-        }
-
-        @keyframes scrollBounce {
-
-            0%,
-            100% {
-                transform: translate(-50%, 0);
-                opacity: 0.55;
-            }
-
-            50% {
-                transform: translate(-50%, 8px);
-                opacity: 1;
-            }
-        }
 
         /* ===== INTRO SERVICIOS ===== */
         .programs-intro {
@@ -448,9 +405,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .scroll-indicator {
-                bottom: 20px;
-            }
+
         }
 
         .programs-cta .btn-primary {
