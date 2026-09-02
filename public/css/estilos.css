@@ -47,6 +47,50 @@ img {
     max-width: 1080px;
     margin: 0 auto;
     padding: 0 28px;
+
+}
+
+/* =========================================================
+   BOTONES BASE
+========================================================= */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 26px;
+    border-radius: 12px 12px 12px 3px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.35s ease,
+        background 0.3s ease;
+}
+
+.btn-primary {
+    background: #c4a45b;
+    color: #1a3c3a;
+}
+
+.btn-primary:hover {
+    background: #d8c27f;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(196, 164, 91, 0.35);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1.5px solid rgba(26, 60, 58, 0.4);
+    color: var(--dark);
+}
+
+.btn-outline:hover {
+    background: rgba(26, 60, 58, 0.06);
+    transform: translateY(-3px);
 }
 
 /* =========================================================
@@ -495,6 +539,12 @@ header.scrolled .header-social-btn {
     text-align: center;
     padding: 150px 28px 64px;
     color: #fff;
+    pointer-events: none;
+
+}
+
+.hero-actions {
+    pointer-events: auto;
 }
 
 .eyebrow {
@@ -701,9 +751,7 @@ section {
     color: rgba(42, 58, 74, 0.6);
 }
 
-.nav-toggle {
-    display: none !important;
-}
+
 
 @media (max-width: 860px) {}
 
@@ -2481,6 +2529,9 @@ header.scrolled .header-social-btn {
     .slide-arrow {
         width: 42px;
         height: 42px;
+        top: auto;
+        bottom: 30px;
+        transform: none;
     }
 
     .slide-arrow svg {
@@ -2530,6 +2581,18 @@ header.scrolled .header-social-btn {
     gap: 26px;
     max-width: 780px;
     margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .info-card:nth-child(3) {
+        max-width: 100%;
+    }
+
 }
 
 /* La tercera tarjeta se centra abajo, ocupando el ancho de las dos columnas */

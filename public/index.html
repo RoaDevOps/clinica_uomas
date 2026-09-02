@@ -123,7 +123,7 @@
         historia es distinta.</p>
       <div class="hero-actions">
         <a href="contacto.html" class="btn btn-primary">Agenda una consulta</a>
-        <a href="https://wa.me/525523808757" target="_blank" rel="noopener" class="btn btn-outline">Línea de atención
+        <a href="https://wa.me/+5212312936667" target="_blank" rel="noopener" class="btn btn-outline">Línea de atención
           24/7</a>
       </div>
     </div>
@@ -131,25 +131,13 @@
   <!-- =========================================================
       SECCIÓN DE BIENVENIDA
   ========================================================= -->
-
   <style>
-    /* ================================
-      SECCIÓN PRINCIPAL
-    ================================= */
-
     .bienvenida {
       position: relative;
       padding: 90px 20px;
-      background: linear-gradient(135deg,
-          #f5f7f6 0%,
-          #e9efed 100%);
+      background: linear-gradient(135deg, #f5f7f6 0%, #e9efed 100%);
       overflow: hidden;
     }
-
-
-    /* ================================
-      DECORACIONES DEL FONDO
-    ================================= */
 
     .bienvenida::before {
       content: "";
@@ -173,11 +161,6 @@
       right: -100px;
     }
 
-
-    /* ================================
-      CONTENEDOR
-    ================================= */
-
     .bienvenida-contenedor {
       position: relative;
       z-index: 2;
@@ -185,11 +168,6 @@
       margin: 0 auto;
       text-align: center;
     }
-
-
-    /* ================================
-      ETIQUETA SUPERIOR
-    ================================= */
 
     .bienvenida-etiqueta {
       display: inline-block;
@@ -204,11 +182,6 @@
       text-transform: uppercase;
     }
 
-
-    /* ================================
-      TÍTULO
-    ================================= */
-
     .bienvenida h2 {
       margin: 0;
       color: #1a3c3a;
@@ -219,11 +192,6 @@
       letter-spacing: 4px;
     }
 
-
-    /* ================================
-      LÍNEA DECORATIVA
-    ================================= */
-
     .titulo-linea {
       width: 70px;
       height: 3px;
@@ -231,11 +199,6 @@
       background: #c4a45b;
       border-radius: 10px;
     }
-
-
-    /* ================================
-      GALERÍA DE IMÁGENES
-    ================================= */
 
     .galeria-bienvenida {
       display: flex;
@@ -245,43 +208,22 @@
       margin-bottom: 55px;
     }
 
-
-    /* ================================
-      TARJETAS DE IMAGEN
-    ================================= */
-
     .imagen-card {
       width: 230px;
       height: 170px;
       overflow: hidden;
       border-radius: 18px;
       background: #ffffff;
-
       border: 2px solid rgba(196, 164, 91, 0.35);
-
-      box-shadow:
-        0 12px 25px rgba(0, 0, 0, 0.12),
-        0 4px 10px rgba(44, 95, 93, 0.08);
-
-      transition:
-        transform 0.4s ease,
-        box-shadow 0.4s ease,
-        border-color 0.4s ease;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12), 0 4px 10px rgba(44, 95, 93, 0.08);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
     }
-
-
-    /* Imagen central destacada */
 
     .imagen-central {
       width: 260px;
       height: 190px;
       transform: translateY(-12px);
     }
-
-
-    /* ================================
-      IMÁGENES
-    ================================= */
 
     .imagen-card img {
       width: 100%;
@@ -290,11 +232,6 @@
       display: block;
       transition: transform 0.5s ease;
     }
-
-
-    /* ================================
-      EFECTOS HOVER
-    ================================= */
 
     .imagen-card:hover {
       transform: translateY(-8px);
@@ -310,12 +247,6 @@
       filter: brightness(1.05);
     }
 
-
-
-    /* ================================
-      TEXTO
-    ================================= */
-
     .bienvenida-texto {
       max-width: 780px;
       margin: 0 auto;
@@ -324,26 +255,15 @@
       line-height: 1.9;
     }
 
-
-    /* Párrafos */
-
     .bienvenida-texto p {
       margin: 0 0 18px;
     }
-
-
-    /* Primer párrafo destacado */
 
     .bienvenida-texto p:first-child {
       color: #1a3c3a;
       font-size: 1.25rem;
       font-weight: 600;
     }
-
-
-    /* ================================
-      BOTÓN
-    ================================= */
 
     .boton-bienvenida {
       display: inline-flex;
@@ -361,12 +281,10 @@
       box-shadow: 0 8px 20px rgba(26, 60, 58, 0.2);
     }
 
-
     .boton-bienvenida span {
       font-size: 1.2rem;
       transition: transform 0.3s ease;
     }
-
 
     .boton-bienvenida:hover {
       background: #2c5f5d;
@@ -374,18 +292,21 @@
       box-shadow: 0 12px 25px rgba(26, 60, 58, 0.3);
     }
 
-
     .boton-bienvenida:hover span {
       transform: translateX(5px);
     }
 
-
-    /* ================================
-      RESPONSIVE - TABLETS
-    ================================= */
+    .decoracion-ramita {
+      position: absolute;
+      right: -40px;
+      bottom: -30px;
+      width: 300px;
+      opacity: 0.65;
+      z-index: 1;
+      pointer-events: none;
+    }
 
     @media (max-width: 900px) {
-
       .galeria-bienvenida {
         gap: 18px;
       }
@@ -399,123 +320,86 @@
         width: 220px;
         height: 170px;
       }
-
     }
 
-
-    /* ================================
-      RESPONSIVE - CELULARES
-    ================================= */
-
     @media (max-width: 768px) {
-
       .bienvenida {
         padding: 65px 18px;
       }
-
 
       .bienvenida h2 {
         font-size: 2rem;
         letter-spacing: 3px;
       }
 
-
       .bienvenida-etiqueta {
         font-size: 0.75rem;
         letter-spacing: 1.5px;
       }
 
-
       .titulo-linea {
         margin-bottom: 35px;
       }
 
-
       .galeria-bienvenida {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
         margin-bottom: 40px;
       }
 
-
       .imagen-card,
       .imagen-central {
-        width: 90%;
-        max-width: 330px;
-        height: 200px;
+        width: 30%;
+        max-width: 115px;
+        height: 100px;
         transform: none;
       }
 
+      .imagen-central {
+        transform: translateY(-6px);
+      }
 
       .imagen-central:hover {
         transform: translateY(-8px);
       }
-
 
       .bienvenida-texto {
         font-size: 1rem;
         line-height: 1.8;
       }
 
-
       .bienvenida-texto p:first-child {
         font-size: 1.1rem;
       }
-
     }
 
-
-    /* ================================
-      CELULARES PEQUEÑOS
-    ================================= */
-
     @media (max-width: 480px) {
-
       .bienvenida {
         padding: 55px 15px;
       }
-
 
       .bienvenida h2 {
         font-size: 1.7rem;
         letter-spacing: 2px;
       }
 
-
       .imagen-card,
       .imagen-central {
-        width: 100%;
-        height: 190px;
+        width: 30%;
+        height: 85px;
       }
-
 
       .bienvenida-texto {
         font-size: 0.95rem;
       }
 
-
       .boton-bienvenida {
         padding: 12px 20px;
         font-size: 0.9rem;
       }
-
-    }
-
-    /* =================================
-    RAMITA DECORATIVA
-  ================================= */
-
-    .decoracion-ramita {
-      position: absolute;
-      right: -40px;
-      bottom: -30px;
-      width: 300px;
-      opacity: 0.65;
-      z-index: 1;
-      pointer-events: none;
     }
   </style>
-
 
   <!-- =========================================================
       HTML DE LA SECCIÓN
