@@ -401,12 +401,62 @@
         }
 
         @media (max-width: 650px) {
+
             .programs-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
             }
 
+            .program-card {
+                padding: 20px 14px 18px;
+                border-radius: 16px;
+            }
 
+            .program-icon {
+                width: 44px;
+                height: 44px;
+                font-size: 1.25rem;
+                margin-bottom: 13px;
+            }
+
+            .program-card h3 {
+                font-size: 0.98rem;
+                line-height: 1.25;
+            }
+
+            .program-card-line {
+                width: 24px;
+                height: 2px;
+                margin: 9px 0 10px;
+            }
+
+            .program-card p {
+                font-size: 0.78rem;
+                line-height: 1.5;
+            }
+
+            .programs-section {
+                padding: 50px 20px;
+            }
+
+            .programs-cta .btn-primary {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 15px 32px;
+                border-radius: 40px;
+                background: #ffffff !important;
+                color: #1a3c3a !important;
+                text-decoration: none;
+                font-size: 0.9rem;
+                font-weight: 600;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+                transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            }
         }
+
+
 
         .programs-cta .btn-primary {
             display: inline-flex;

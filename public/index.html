@@ -881,7 +881,20 @@
     window.addEventListener('scroll', onScroll);
     onScroll();
   </script>
-  <script src="js/nav.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('is-active');
+          const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+          navToggle.setAttribute('aria-expanded', !expanded);
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
