@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="100" r="100" fill="#2E7268"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#F5F5F3" stroke-width="2" opacity="0.5"/>
+  <!-- hoja / cruz sencilla -->
+  <path d="M100 46c-24 10-40 32-40 58 0 22 18 40 40 40s40-18 40-40c0-26-16-48-40-58z"
+        fill="#7FA79E" opacity="0.9"/>
+  <path d="M100 62v66M78 95c6 10 14 16 22 18M122 95c-6 10-14 16-22 18"
+        stroke="#F5F5F3" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <text x="100" y="176" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#F5F5F3">UOM</text>
+</svg>
